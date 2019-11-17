@@ -15,9 +15,10 @@ def turtlePlot(turtleCommands):
     plotPoints = np.concatenate((np.array([[0,0]]),plotPoints),axis=0)
     
     plt.plot(plotPoints[:,0],plotPoints[:,1])
-    plt.xlim(0,10)
-    plt.ylim(0,10)
+    plt.xlim(np.min(plotPoints[:,0])-0.25,np.max(plotPoints[:,0])+0.25)
+    plt.ylim(np.min(plotPoints[:,1])-0.25,np.max(plotPoints[:,1])+0.25)
+#    plt.title()
     plt.show()    
     return
 
-turtlePlot(np.array([2,math.pi/3,1,math.pi/3,1,-math.pi/3,1,-math.pi/3,1,-math.pi/3,1,-math.pi/3,1,math.pi/3,1,math.pi/3]))
+turtlePlot(np.array([1,math.pi/3,1,math.pi/3,1,-math.pi/3,1,-math.pi/3,1,-math.pi/3,1,-math.pi/3,1,math.pi/3,1,math.pi/3]))
