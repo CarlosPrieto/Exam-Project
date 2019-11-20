@@ -4,7 +4,7 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 
-def turtlePlot(turtleCommands):
+def turtlePlot(turtleCommands, pattern):
     plotPoints = np.zeros([int(turtleCommands.size/2),2])
     direction = np.array([1,0])
     for i in range (int(turtleCommands.size/2)):
@@ -17,8 +17,8 @@ def turtlePlot(turtleCommands):
     plt.plot(plotPoints[:,0],plotPoints[:,1])
     plt.xlim(np.min(plotPoints[:,0])-0.25,np.max(plotPoints[:,0])+0.25)
     plt.ylim(np.min(plotPoints[:,1])-0.25,np.max(plotPoints[:,1])+0.25)
-#    plt.title()
+    plt.title(pattern) #Maybe also have the number of iterations in the title
     plt.show()    
     return
 
-turtlePlot(np.array([1,math.pi/3,1,math.pi/3,1,-math.pi/3,1,-math.pi/3,1,-math.pi/3,1,-math.pi/3,1,math.pi/3,1,math.pi/3]))
+turtlePlot(np.array([1,math.pi/3,1,math.pi/3,1,-math.pi/3,1,-math.pi/3,1,-math.pi/3,1,-math.pi/3,1,math.pi/3,1,math.pi/3]),"Sierpinski triangle")
