@@ -25,7 +25,7 @@ def turtleGraph(LindenmayerString,N):
             elif LindenmayerString[i]=='L':
                 turtleCommands[i]=1/3* math.pi
             elif LindenmayerString[i]=='R':
-                turtleCommands[i]=1/3* math.pi   
+                turtleCommands[i]=-1/3* math.pi   
         
                #Koch
     elif 'S' in LindenmayerString :
@@ -36,5 +36,5 @@ def turtleGraph(LindenmayerString,N):
             elif LindenmayerString[i]=='L':
                 turtleCommands[i]=1/3* math.pi
             elif LindenmayerString[i]=='R':
-                turtleCommands[i]=2/3*math.pi 
+                turtleCommands[i]=-2/3*math.pi 
     return turtleCommands

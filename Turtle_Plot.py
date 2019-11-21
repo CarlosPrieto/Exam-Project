@@ -20,5 +20,3 @@ def turtlePlot(turtleCommands, pattern):
     plt.title(pattern) #Maybe also have the number of iterations in the title
     plt.show()    
     return
-
-turtlePlot(np.array([1,math.pi/3,1,math.pi/3,1,-math.pi/3,1,-math.pi/3,1,-math.pi/3,1,-math.pi/3,1,math.pi/3,1,math.pi/3]),"Sierpinski triangle")
