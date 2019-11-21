@@ -8,10 +8,10 @@ LindenmayerString = ""
 while True:
     function = str(input("1. Choose system and iterations\n2. Generate Plots\n3. Quit\nChoose a function\n"))
     if function == "1":
-        #Chech N > -1
         while True:
             try:
                 N = int(input("Input number of iterations\n"))
+                #Chech N > -1
                 break
             except ValueError:
                 print("\nPlease input an integer greater than or equal to 0")
