@@ -16,7 +16,7 @@ def turtleGraph(LindenmayerString,N):
 
                #Sierpinski
     if 'A' in LindenmayerString :
-        LineLength=N/2
+        LineLength = (1/2)**N
         for i in range (0,len(LindenmayerString)):
             if LindenmayerString[i]=='A':
                 turtleCommands[i]=LineLength
@@ -29,7 +29,7 @@ def turtleGraph(LindenmayerString,N):
         
                #Koch
     elif 'S' in LindenmayerString :
-        LineLength=N/3
+        LineLength=(1/3)**N
         for i in range (0,len(turtleCommands)):
             if LindenmayerString[i]=='S':
                 turtleCommands[i]=LineLength
