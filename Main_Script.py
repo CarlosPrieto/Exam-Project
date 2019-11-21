@@ -1,4 +1,3 @@
-import numpy as np
 from Lindenmayer_Iteration import LindIter
 from Turtle_Graphics import turtleGraph
 from Turtle_Plot import turtlePlot
