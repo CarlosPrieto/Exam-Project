@@ -1,6 +1,7 @@
-from Lindenmayer_Iteration import LindIter
-from Turtle_Graphics import turtleGraph
-from Turtle_Plot import turtlePlot
+from Lindenmayer_Iteration import LindIter #Written by Nicoline Hansen
+from Turtle_Graphics import turtleGraph #Written by Marion Huck
+from Turtle_Plot import turtlePlot #Written by Carlos Prieto
+#The main script is written in equal colaboration between group members
 
 LindenmayerString = ""
 
