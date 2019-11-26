@@ -13,21 +13,19 @@ def LindIter(System,N):
     
     elif System == "Sierpinski":
         LindenmayerString = "A"
-        ifA = "BRARB"
-        ifB = "ALBLA"
-        ifL = "L"
-        ifR = "R"
+        #Iterating LindenmayerString N times. tempString is LindenmayerString from i-1 iteration
         for i in range (0,N):
             tempString = LindenmayerString
             LindenmayerString = ""
+            #Checking each letter q in tempString and replacing it accordingly in LindenmayerString
             for q in range (0,len(tempString)):
                 if tempString[q] == "A":
-                    LindenmayerString += ifA
+                    LindenmayerString += "BRARB"
                 elif tempString[q] == "B":
-                    LindenmayerString += ifB
+                    LindenmayerString += "ALBLA"
                 elif tempString[q] == "L":
-                    LindenmayerString += ifL
+                    LindenmayerString += "L"
                 elif tempString[q] == "R":
-                    LindenmayerString += ifR
+                    LindenmayerString += "R"
     
     return LindenmayerString
