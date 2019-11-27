@@ -14,7 +14,8 @@ import math
 def turtleGraph(LindenmayerString,N):
     turtleCommands=np.zeros(len(LindenmayerString))
 
-               #Sierpinski
+               #Sierpinski 
+#replacing each letter by there indicated value and adding them into an array
     if 'A' in LindenmayerString :
         LineLength = (1/2)**N
         for i in range (0,len(LindenmayerString)):
@@ -28,6 +29,7 @@ def turtleGraph(LindenmayerString,N):
                 turtleCommands[i]=-1/3* math.pi   
         
                #Koch
+#replacing each letter by there indicated value and adding them into an array
     elif 'S' in LindenmayerString :
         LineLength=(1/3)**N
         for i in range (0,len(turtleCommands)):
