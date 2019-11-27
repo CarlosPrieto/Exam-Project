@@ -31,6 +31,7 @@ while True:
                 break
             else:
                 print("\nPlease choose a valid option (number or name)")
+        print(LindenmayerString)
             
     elif function == "2":
         #Making sure that a Lindenmayer string has been defined, then generating plots

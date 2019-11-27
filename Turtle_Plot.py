@@ -23,8 +23,8 @@ def turtlePlot(turtleCommands, pattern, N):
     plt.xlim(0,1)
     if pattern == "Koch curve":
         plt.ylim(-0.225,0.525)
-    if pattern == "Sierpinski triangle" and np.max(plotPoints[:,1])!=0:
-        plt.ylim(0,np.max(plotPoints[:,1]))
+    if pattern == "Sierpinski triangle" and N!=0:
+        plt.ylim(np.min(plotPoints[:,1]),np.max(plotPoints[:,1]))
     plt.title(pattern + " after {:d} iteration(s)".format(N))
     
     plt.show()    
